@@ -1,5 +1,6 @@
 services:
     tabby:
+        image: ${REGISTRY_URL:-gcr.ravenwolf.org}/${REGISTRY_OWNER:-ravensorb}/${IMAGE_NAME:-tabby-web}:${IMAGE_TAG:-latest}
         build: .
         restart: always
         depends_on:
